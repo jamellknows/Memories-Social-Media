@@ -14,7 +14,6 @@ app.use('/posts', postRoutes);
 
 /*connect server application to cloud database */
 
-const CONNECTION_URL = 'mongodb+srv://Sonic100:Sonic100@cluster0.fp4wl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true})
